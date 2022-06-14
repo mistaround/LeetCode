@@ -144,3 +144,24 @@ https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 - Sliding window, loop each time across a wordLength
   - Need to judge whether the word in wordsCount and then whether there are excessed word...
 - In a word, it's very complex and I think I can't handle it if it appears in an interview
+
+#### LC36 - Valid Sudoku
+https://leetcode.com/problems/valid-sudoku/
+- Brute-force
+
+#### LC41 - First Missing Positive
+https://leetcode.com/problems/first-missing-positive/
+- Discard num non-positive by making them larger than array size
+- Loop i from 0 to len(num), make each num[i] indicates whether i+1 inside the array
+
+#### LC73 - Set Matrix Zeroes
+https://leetcode.com/problems/set-matrix-zeroes/
+- First ignore zeros in first col and row, record whether need to fill them 
+- Use zeros in first col and row to indicate whether to fill the row or col
+- At last fill the first row and col
+
+#### LC76 - Minimum Window Substring
+https://leetcode.com/problems/minimum-window-substring/
+TLE...
+- Two pointer sliding window and two hashmap
+- When requirement is fulfilled, move left to smaller window
