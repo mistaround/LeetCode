@@ -162,6 +162,21 @@ https://leetcode.com/problems/set-matrix-zeroes/
 
 #### LC76 - Minimum Window Substring
 https://leetcode.com/problems/minimum-window-substring/
-TLE...
 - Two pointer sliding window and two hashmap
 - When requirement is fulfilled, move left to smaller window
+- To judge whether requirement is fulfilled, if the increment this time not exceed needed, one char matched. 
+
+#### LC105 - Construct Binary Tree from Preorder and Inorder Traversal
+https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+- Preorder traversal gives the information of root
+- Inorder traversal gives theh information of left and right sub tree
+- Step on by the index of preorder and recursively construct left and right subtree by inorder
+
+#### LC106 - Construct Binary Tree from Inorder and Postorder Traversal
+https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+- Similar with LC105
+- Postorder traversal gives the information of root too if inversed
+
+#### LC128 - Longest Consecutive Sequence
+https://leetcode.com/problems/longest-consecutive-sequence/
+- Use a hashset to store, every first time the prev num is not contained, find the longest consecutive sequence from here and compare with the stored longest.
