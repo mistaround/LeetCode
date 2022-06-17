@@ -17,6 +17,14 @@ https://leetcode.com/problems/3sum-closest/
 https://leetcode.com/problems/4sum/
 - Same as 3 Sum
 
+#### LC33 - Search in Rotated Sorted Array
+https://leetcode.com/problems/search-in-rotated-sorted-array/
+- Binary Search
+
+#### LC34 - Find First and Last Position of Element in Sorted Array
+https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+- Binary Search
+
 #### LC49 - Group Anagrams 
 https://leetcode.com/problems/group-anagrams/
 - Sort each string and store in hashmap to group them
@@ -149,10 +157,19 @@ https://leetcode.com/problems/substring-with-concatenation-of-all-words/
 https://leetcode.com/problems/valid-sudoku/
 - Brute-force
 
+#### LC38 - Count and Say
+https://leetcode.com/problems/count-and-say/
+- Recursive
+
 #### LC41 - First Missing Positive
 https://leetcode.com/problems/first-missing-positive/
 - Discard num non-positive by making them larger than array size
 - Loop i from 0 to len(num), make each num[i] indicates whether i+1 inside the array
+
+#### LC42 - Trapping Rain Water
+https://leetcode.com/problems/trapping-rain-water/
+- Dynamic Programming
+- Note that rain water is determined by min(maxLeft,maxRight)
 
 #### LC73 - Set Matrix Zeroes
 https://leetcode.com/problems/set-matrix-zeroes/
