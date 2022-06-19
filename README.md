@@ -92,12 +92,25 @@ https://leetcode.com/problems/spiral-matrix/
 - Corner cases is killing me
 - Spiral and smaller matrix
 
+#### LC55 - Jump Game
+https://leetcode.com/problems/jump-game/
+- dp[i] stands for how long we can go from dp[:i]
+
 #### LC56 - Merge Intervals
 https://leetcode.com/problems/merge-intervals/
 - Sort based on first element 
   - sorted(intervals, key=lambda intervals: intervals[0])
 - Use a cache to update current merged interval
   - cache = [cache[0], max(cache[1], intervals[i][1])]
+
+#### LC62 - Unique Paths
+https://leetcode.com/problems/unique-paths/
+- (m+n-2)!/((m-1)!(n-1)!)
+
+#### LC69 - Sqrt(x)
+https://leetcode.com/problems/sqrtx/submissions/
+- Binary Search
+- Use division to speed up
 
 #### LC73 - Set Matrix Zeroes
 https://leetcode.com/problems/set-matrix-zeroes/
@@ -117,6 +130,21 @@ https://leetcode.com/problems/minimum-window-substring/
 - Two pointer sliding window and two hashmap
 - When requirement is fulfilled, move left to smaller window
 - To judge whether requirement is fulfilled, if the increment this time not exceed needed, one char matched. 
+
+#### LC78 - Subsets
+https://leetcode.com/problems/subsets/
+- loop on length of subsets
+  - use recursion to enumerate one by one
+```python
+  def helper(first, cur, k):
+        if len(cur) == k:
+            ans.append(cur[:])
+            return
+        for i in range(first, length):
+            cur.append(nums[i])
+            helper(i+1, cur, k)
+            cur.pop()
+```
 
 #### LC88 - Merge Sorted Array
 https://leetcode.com/problems/merge-sorted-array/
