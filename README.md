@@ -146,9 +146,36 @@ https://leetcode.com/problems/subsets/
             cur.pop()
 ```
 
+#### LC79 - Word Search
+https://leetcode.com/problems/word-search/
+- Backtrace
+- Modify pre-used element to avoid using again
+
+#### LC84 - Largest Rectangle in Histogram
+https://leetcode.com/problems/largest-rectangle-in-histogram/
+- Append -1 to finally clear the stack
+- Stack stores increasing height index
+- Whenver meet a value smaller than stack top, calculate area
+
 #### LC88 - Merge Sorted Array
 https://leetcode.com/problems/merge-sorted-array/
 - Nothing special
+
+#### LC101 - Symmetric Tree
+https://leetcode.com/problems/symmetric-tree/
+- Recursion
+
+#### LC102 - Binary Tree Level Order Traversal
+https://leetcode.com/problems/binary-tree-level-order-traversal/
+- Queue
+
+#### LC103 - Binary Tree Zigzag Level Order Traversal
+https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+- Just reverse when odd in LC102
+
+#### LC104 - Maximum Depth of Binary Tree
+https://leetcode.com/problems/maximum-depth-of-binary-tree/
+- Same as LC102,103
 
 #### LC105 - Construct Binary Tree from Preorder and Inorder Traversal
 https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
