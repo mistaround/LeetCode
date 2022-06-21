@@ -188,6 +188,46 @@ https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-t
 - Similar with LC105
 - Postorder traversal gives the information of root too if inversed
 
+#### LC108 - Convert Sorted Array to Binary Search Tree
+https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+- Just half and half
+
+#### LC116 - Populating Next Right Pointers in Each Node
+https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+- BFS
+
+#### LC118 - Pascal's Triangle
+https://leetcode.com/problems/pascals-triangle/
+- Easy
+
+#### LC121 - Best Time to Buy and Sell Stock
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+- Use a stack to store prev minimum
+
+#### LC122 - Best Time to Buy and Sell Stock II
+https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+- It's a brain teaser
+- Since you can buy and sell on same day, if tommorrow will make profit, just buy today. Since if it's higher the day after tomorrow, we can just buy tomorrow and sell the day after tommorrow.
+
+#### LC124 - Binary Tree Maximum Path Sum
+https://leetcode.com/problems/binary-tree-maximum-path-sum/
+- Think clearly, coding will be easy
+- DFS, for largest value we need to concern whether it's left or right or l+r+m, for traverse we need to return max(l,r) + m since m cannot be used twice.
+  ```Java
+  private int helper(TreeNode root) {
+          if (root == null) return 0;
+          int cur = root.val;
+          int left = Math.max(0, helper(root.left));
+          int right = Math.max(0, helper(root.right));
+          maximum = Math.max(maximum, left + right + cur);
+          return Math.max(left, right) + cur;
+      }
+  ```
+
+#### LC125 - Valid Palindrome
+https://leetcode.com/problems/valid-palindrome/
+- s.replaceAll("[^a-zA-Z0-9]","")
+
 #### LC128 - Longest Consecutive Sequence
 https://leetcode.com/problems/longest-consecutive-sequence/
 - Use a hashset to store, every first time the prev num is not contained, find the longest consecutive sequence from here and compare with the stored longest.
