@@ -245,6 +245,11 @@ https://leetcode.com/problems/surrounded-regions/
     - if marked, change to "O"
     - elif unmarked "O", change to "X"
 
+#### LC131 - Palindrome Partitioning
+https://leetcode.com/problems/palindrome-partitioning/
+- DP to make dp[i][j] represents whether s[i:j] is palindrome
+- DFS to enumerate palindrome
+
 #### LC147 - Insertion Sort List
 https://leetcode.com/problems/insertion-sort-list/
 - Just insertion sort on a linked list
