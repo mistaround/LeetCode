@@ -228,9 +228,22 @@ https://leetcode.com/problems/binary-tree-maximum-path-sum/
 https://leetcode.com/problems/valid-palindrome/
 - s.replaceAll("[^a-zA-Z0-9]","")
 
+#### LC127 - Word Ladder
+https://leetcode.com/problems/word-ladder/
+- BFS so we can get result from same level to find the shortest
+- Use two hashset to find both from begin and from end to speed up
+
 #### LC128 - Longest Consecutive Sequence
 https://leetcode.com/problems/longest-consecutive-sequence/
 - Use a hashset to store, every first time the prev num is not contained, find the longest consecutive sequence from here and compare with the stored longest.
+
+#### LC130 - Surrounded Regions
+https://leetcode.com/problems/surrounded-regions/
+- Only "O" in border will not be change, so
+  - we can dfs search "O" region on border and mark them
+  - traverse through whole board
+    - if marked, change to "O"
+    - elif unmarked "O", change to "X"
 
 #### LC147 - Insertion Sort List
 https://leetcode.com/problems/insertion-sort-list/
