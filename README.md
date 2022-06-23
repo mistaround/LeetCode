@@ -250,6 +250,29 @@ https://leetcode.com/problems/palindrome-partitioning/
 - DP to make dp[i][j] represents whether s[i:j] is palindrome
 - DFS to enumerate palindrome
 
+#### LC134 - Gas Station
+https://leetcode.com/problems/gas-station/
+- If i to j cannot make it, any k in [i,j], k to j will not make it too
+- So wo should then find from j+1, so finish in O(N)
+
+#### LC136 - Single Number
+https://leetcode.com/problems/single-number/
+- XOR
+
+#### LC138 - Copy List with Random Pointer
+https://leetcode.com/problems/copy-list-with-random-pointer/
+- HashMap
+
+#### LC139 - Word Break
+https://leetcode.com/problems/word-break/
+- Store previous success index and loop on them
+
+#### LC140 - Word Break II
+https://leetcode.com/problems/word-break-ii/
+- Idea from LC139 with DFS
+- Store current word in current length in an array
+  - Finally use dfs to generate the answer
+
 #### LC147 - Insertion Sort List
 https://leetcode.com/problems/insertion-sort-list/
 - Just insertion sort on a linked list
