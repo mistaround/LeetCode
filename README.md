@@ -273,6 +273,17 @@ https://leetcode.com/problems/word-break-ii/
 - Store current word in current length in an array
   - Finally use dfs to generate the answer
 
+#### LC141 - Linked List Cycle
+https://leetcode.com/problems/linked-list-cycle/
+- Two pointer, one faster, if met, True
+
+#### LC146 - LRU Cache
+https://leetcode.com/problems/lru-cache/
+- Use double list with head and tail node
+  - the node after the head node is mru
+  - the node before the tail node is lru
+  - use two internal function insert and delete to maintain the double list 
+
 #### LC147 - Insertion Sort List
 https://leetcode.com/problems/insertion-sort-list/
 - Just insertion sort on a linked list
