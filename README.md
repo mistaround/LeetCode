@@ -293,6 +293,26 @@ https://leetcode.com/problems/sort-list/
 - Merge sort of a linked list
   - Recursively split and merge left and right part
 
+#### LC149 - Max Points on a Line
+https://leetcode.com/problems/max-points-on-a-line/
+- O(N^2) stupid method without optimization, just use a hash map to store (k-b, occurrence) pairs
+
+#### LC150 - Evaluate Reverse Polish Notation
+https://leetcode.com/problems/evaluate-reverse-polish-notation/
+- Use a stack
+
+#### LC152 - Maximum Product Subarray
+https://leetcode.com/problems/maximum-product-subarray/
+- Find max from head to tail and then tail to head to get rid of the sign problems
+
+#### LC155 - Min Stack
+https://leetcode.com/problems/min-stack/
+- Stack entry save both val and minval
+
+#### LC160 - Intersection of Two Linked Lists
+https://leetcode.com/problems/intersection-of-two-linked-lists/
+- HashSet
+
 #### LC164 - Maximum Gap
 https://leetcode.com/problems/maximum-gap/
 - Linear time sort algorithm
