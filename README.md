@@ -313,10 +313,24 @@ https://leetcode.com/problems/min-stack/
 https://leetcode.com/problems/intersection-of-two-linked-lists/
 - HashSet
 
+#### LC162 - Find Peak Element
+https://leetcode.com/problems/find-peak-element/
+- If num[i] > num[i+1], peak point must exist at x <= i
+- Else, peak point must exist at x >= i + 1
+- So we can do binary search
+
+#### LC163 - Missing Ranges
+https://leetcode.com/problems/missing-ranges/
+- Nothing to say, a boring problem
+
 #### LC164 - Maximum Gap
 https://leetcode.com/problems/maximum-gap/
 - Linear time sort algorithm
   - Radix Sort
+
+#### LC166 - Fraction to Recurring Decimal
+https://leetcode.com/problems/fraction-to-recurring-decimal/
+- Long division
 
 #### LC169 - Majority Element
 https://leetcode.com/problems/majority-element/
