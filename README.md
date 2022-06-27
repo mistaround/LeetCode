@@ -337,6 +337,14 @@ https://leetcode.com/problems/majority-element/
 - Use Counter
   - return Counter(nums).most_common(1)[0][0]
 
+#### LC171 - Excel Sheet Column Number
+https://leetcode.com/problems/excel-sheet-column-number/
+- 26-base
+
+#### LC172 - Factorial Trailing Zeroes
+https://leetcode.com/problems/factorial-trailing-zeroes/
+- Hardcode....
+
 #### LC179 - Largest Number
 https://leetcode.com/problems/largest-number/
 - Sort
@@ -400,6 +408,10 @@ https://leetcode.com/problems/wiggle-sort-ii/
 - Sort
 - Two pass, insert with stride of 1 each time
 
+#### LC1689 - Partitioning Into Minimum Number Of Deci-Binary Numbers
+https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/
+- Brain teaser
+
 #### LC2315 - Count Asterisks
 https://leetcode.com/problems/count-asterisks/
 - One pass
@@ -436,3 +448,16 @@ class Solution:
         
         return helper(n, 0, 0)
 ```
+
+#### LC2319 - Check if Matrix Is X-Matrix
+https://leetcode.com/problems/check-if-matrix-is-x-matrix/
+- Nothing to say
+
+#### LC2320 - Count Number of Ways to Place Houses
+https://leetcode.com/problems/count-number-of-ways-to-place-houses/
+- Use 2D dp
+
+#### LC2321 - Maximum Score Of Spliced Array
+https://leetcode.com/problems/maximum-score-of-spliced-array/
+- Kadane Algo: longest subarray sum
+- So the answer can be changed to: max(sum(A) + kadane(B-A), sum(B) + kadane(A-B))
