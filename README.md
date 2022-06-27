@@ -1,140 +1,193 @@
 # LeetCode
 
 #### LC1 - Two Sum
-https://leetcode.com/problems/two-sum/
+
+<https://leetcode.com/problems/two-sum/>
+
 - Classical HashMap
 
 #### LC3 - Longest Substring Without Repeating Characters
-https://leetcode.com/problems/longest-substring-without-repeating-characters/
+
+<https://leetcode.com/problems/longest-substring-without-repeating-characters/>
+
 - Use HashMap as sliding window
 - ans = Math.max(ans, i - left);
 - left = Math.max(left, window.get(cur) + 1);
 
 #### LC10 - Regular Expression Matching
-https://leetcode.com/problems/regular-expression-matching/
+
+<https://leetcode.com/problems/regular-expression-matching/>
+
 - Dynamic Programming
 - dp[i][j] stands for s[:i] matches p[:j]
 - if i=0 which means s is empty, only if p = a*b*c*... can match
 - when meet *, we should consider skip or once or multiple times:
   - dp[i][j-2] or dp[i][j-1] or (dp[i-1][j] and (s[i-1] == p[j-2] or p[j-2] == "."))
 
-#### LC15 - 3 Sum 
-https://leetcode.com/problems/3sum/
+#### LC15 - 3 Sum
+
+<https://leetcode.com/problems/3sum/>
+
 - Sort
 - Loop with two pointers
 - Skipping used nums
 
-#### LC16 - 3 Sum Closest 
-https://leetcode.com/problems/3sum-closest/
+#### LC16 - 3 Sum Closest
+
+<https://leetcode.com/problems/3sum-closest/>
+
 - Sort
-- Loop with two pointers 
+- Loop with two pointers
 - Comparing based on abs(target - current) and abs(target - closet)
 
 #### LC17 - Letter Combinations of a Phone Number
-https://leetcode.com/problems/letter-combinations-of-a-phone-number/
+
+<https://leetcode.com/problems/letter-combinations-of-a-phone-number/>
+
 - Recursive
 
-#### LC18 - 4 Sum 
-https://leetcode.com/problems/4sum/
+#### LC18 - 4 Sum
+
+<https://leetcode.com/problems/4sum/>
+
 - Same as 3 Sum
 
 #### LC30 - Substring with Concatenation of All Words
-https://leetcode.com/problems/substring-with-concatenation-of-all-words/
+
+<https://leetcode.com/problems/substring-with-concatenation-of-all-words/>
+
 - Two HashMap, one for wordsCount one for wordsFound
 - Sliding window, loop each time across a wordLength
   - Need to judge whether the word in wordsCount and then whether there are excessed word...
 - In a word, it's very complex and I think I can't handle it if it appears in an interview
 
 #### LC33 - Search in Rotated Sorted Array
-https://leetcode.com/problems/search-in-rotated-sorted-array/
+
+<https://leetcode.com/problems/search-in-rotated-sorted-array/>
+
 - Binary Search
 
 #### LC34 - Find First and Last Position of Element in Sorted Array
-https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/
+
+<https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/>
+
 - Binary Search
 
 #### LC36 - Valid Sudoku
-https://leetcode.com/problems/valid-sudoku/
+
+<https://leetcode.com/problems/valid-sudoku/>
+
 - Brute-force
 
 #### LC38 - Count and Say
-https://leetcode.com/problems/count-and-say/
+
+<https://leetcode.com/problems/count-and-say/>
+
 - Recursive
 
 #### LC41 - First Missing Positive
-https://leetcode.com/problems/first-missing-positive/
+
+<https://leetcode.com/problems/first-missing-positive/>
+
 - Discard num non-positive by making them larger than array size
 - Loop i from 0 to len(num), make each num[i] indicates whether i+1 inside the array
 
 #### LC42 - Trapping Rain Water
-https://leetcode.com/problems/trapping-rain-water/
+
+<https://leetcode.com/problems/trapping-rain-water/>
+
 - Dynamic Programming
 - Note that rain water is determined by min(maxLeft,maxRight)
 
 #### LC44 - Wildcard Matching
-https://leetcode.com/problems/wildcard-matching/
+
+<https://leetcode.com/problems/wildcard-matching/>
+
 - Dynamic Programming
 - Using dp[i][j] to represent whether s[:i] matches p[:j]
 - init if s is empty, only p = ***... will match
 
-#### LC49 - Group Anagrams 
-https://leetcode.com/problems/group-anagrams/
+#### LC49 - Group Anagrams
+
+<https://leetcode.com/problems/group-anagrams/>
+
 - Sort each string and store in hashmap to group them
 - "".join(sorted(string))
 
 #### LC50 - Pow(x,n)
-https://leetcode.com/problems/powx-n/
+
+<https://leetcode.com/problems/powx-n/>
+
 - pow(x,n) = pow(x,n/2) * pow(x, n/2) ...
 - Recursively
 
 #### LC54 - Spiral Matrix
-https://leetcode.com/problems/spiral-matrix/
+
+<https://leetcode.com/problems/spiral-matrix/>
+
 - Corner cases is killing me
 - Spiral and smaller matrix
 
 #### LC55 - Jump Game
-https://leetcode.com/problems/jump-game/
+
+<https://leetcode.com/problems/jump-game/>
+
 - dp[i] stands for how long we can go from dp[:i]
 
 #### LC56 - Merge Intervals
-https://leetcode.com/problems/merge-intervals/
-- Sort based on first element 
+
+<https://leetcode.com/problems/merge-intervals/>
+
+- Sort based on first element
   - sorted(intervals, key=lambda intervals: intervals[0])
 - Use a cache to update current merged interval
   - cache = [cache[0], max(cache[1], intervals[i][1])]
 
 #### LC62 - Unique Paths
-https://leetcode.com/problems/unique-paths/
+
+<https://leetcode.com/problems/unique-paths/>
+
 - (m+n-2)!/((m-1)!(n-1)!)
 
 #### LC69 - Sqrt(x)
-https://leetcode.com/problems/sqrtx/submissions/
+
+<https://leetcode.com/problems/sqrtx/submissions/>
+
 - Binary Search
 - Use division to speed up
 
 #### LC73 - Set Matrix Zeroes
-https://leetcode.com/problems/set-matrix-zeroes/
-- First ignore zeros in first col and row, record whether need to fill them 
+
+<https://leetcode.com/problems/set-matrix-zeroes/>
+
+- First ignore zeros in first col and row, record whether need to fill them
 - Use zeros in first col and row to indicate whether to fill the row or col
 - At last fill the first row and col
 
 #### LC75 - Sort Colors
-https://leetcode.com/problems/sort-colors/
+
+<https://leetcode.com/problems/sort-colors/>
+
 - Three pointer
   - Make sure nums before zero are all 0
   - nums after two are all 2
   - thus 1 will be in the middle
 
 #### LC76 - Minimum Window Substring
-https://leetcode.com/problems/minimum-window-substring/
+
+<https://leetcode.com/problems/minimum-window-substring/>
+
 - Two pointer sliding window and two hashmap
 - When requirement is fulfilled, move left to smaller window
-- To judge whether requirement is fulfilled, if the increment this time not exceed needed, one char matched. 
+- To judge whether requirement is fulfilled, if the increment this time not exceed needed, one char matched.
 
 #### LC78 - Subsets
-https://leetcode.com/problems/subsets/
+
+<https://leetcode.com/problems/subsets/>
+
 - loop on length of subsets
   - use recursion to enumerate one by one
+
 ```python
   def helper(first, cur, k):
         if len(cur) == k:
@@ -147,72 +200,103 @@ https://leetcode.com/problems/subsets/
 ```
 
 #### LC79 - Word Search
-https://leetcode.com/problems/word-search/
+
+<https://leetcode.com/problems/word-search/>
+
 - Backtrace
 - Modify pre-used element to avoid using again
 
 #### LC84 - Largest Rectangle in Histogram
-https://leetcode.com/problems/largest-rectangle-in-histogram/
+
+<https://leetcode.com/problems/largest-rectangle-in-histogram/>
+
 - Append -1 to finally clear the stack
 - Stack stores increasing height index
 - Whenver meet a value smaller than stack top, calculate area
 
 #### LC88 - Merge Sorted Array
-https://leetcode.com/problems/merge-sorted-array/
+
+<https://leetcode.com/problems/merge-sorted-array/>
+
 - Nothing special
 
 #### LC101 - Symmetric Tree
-https://leetcode.com/problems/symmetric-tree/
+
+<https://leetcode.com/problems/symmetric-tree/>
+
 - Recursion
 
 #### LC102 - Binary Tree Level Order Traversal
-https://leetcode.com/problems/binary-tree-level-order-traversal/
+
+<https://leetcode.com/problems/binary-tree-level-order-traversal/>
+
 - Queue
 
 #### LC103 - Binary Tree Zigzag Level Order Traversal
-https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+
+<https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/>
+
 - Just reverse when odd in LC102
 
 #### LC104 - Maximum Depth of Binary Tree
-https://leetcode.com/problems/maximum-depth-of-binary-tree/
+
+<https://leetcode.com/problems/maximum-depth-of-binary-tree/>
+
 - Same as LC102,103
 
 #### LC105 - Construct Binary Tree from Preorder and Inorder Traversal
-https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+
+<https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/>
+
 - Preorder traversal gives the information of root
 - Inorder traversal gives theh information of left and right sub tree
 - Step on by the index of preorder and recursively construct left and right subtree by inorder
 
 #### LC106 - Construct Binary Tree from Inorder and Postorder Traversal
-https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/
+
+<https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/>
+
 - Similar with LC105
 - Postorder traversal gives the information of root too if inversed
 
 #### LC108 - Convert Sorted Array to Binary Search Tree
-https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+
+<https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/>
+
 - Just half and half
 
 #### LC116 - Populating Next Right Pointers in Each Node
-https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+
+<https://leetcode.com/problems/populating-next-right-pointers-in-each-node/>
+
 - BFS
 
 #### LC118 - Pascal's Triangle
-https://leetcode.com/problems/pascals-triangle/
+
+<https://leetcode.com/problems/pascals-triangle/>
+
 - Easy
 
 #### LC121 - Best Time to Buy and Sell Stock
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
+
+<https://leetcode.com/problems/best-time-to-buy-and-sell-stock/>
+
 - Use a stack to store prev minimum
 
 #### LC122 - Best Time to Buy and Sell Stock II
-https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/
+
+<https://leetcode.com/problems/best-time-to-buy-and-sell-stock-ii/>
+
 - It's a brain teaser
 - Since you can buy and sell on same day, if tommorrow will make profit, just buy today. Since if it's higher the day after tomorrow, we can just buy tomorrow and sell the day after tommorrow.
 
 #### LC124 - Binary Tree Maximum Path Sum
-https://leetcode.com/problems/binary-tree-maximum-path-sum/
+
+<https://leetcode.com/problems/binary-tree-maximum-path-sum/>
+
 - Think clearly, coding will be easy
 - DFS, for largest value we need to concern whether it's left or right or l+r+m, for traverse we need to return max(l,r) + m since m cannot be used twice.
+
   ```Java
   private int helper(TreeNode root) {
           if (root == null) return 0;
@@ -225,20 +309,28 @@ https://leetcode.com/problems/binary-tree-maximum-path-sum/
   ```
 
 #### LC125 - Valid Palindrome
-https://leetcode.com/problems/valid-palindrome/
+
+<https://leetcode.com/problems/valid-palindrome/>
+
 - s.replaceAll("[^a-zA-Z0-9]","")
 
 #### LC127 - Word Ladder
-https://leetcode.com/problems/word-ladder/
+
+<https://leetcode.com/problems/word-ladder/>
+
 - BFS so we can get result from same level to find the shortest
 - Use two hashset to find both from begin and from end to speed up
 
 #### LC128 - Longest Consecutive Sequence
-https://leetcode.com/problems/longest-consecutive-sequence/
+
+<https://leetcode.com/problems/longest-consecutive-sequence/>
+
 - Use a hashset to store, every first time the prev num is not contained, find the longest consecutive sequence from here and compare with the stored longest.
 
 #### LC130 - Surrounded Regions
-https://leetcode.com/problems/surrounded-regions/
+
+<https://leetcode.com/problems/surrounded-regions/>
+
 - Only "O" in border will not be change, so
   - we can dfs search "O" region on border and mark them
   - traverse through whole board
@@ -246,107 +338,153 @@ https://leetcode.com/problems/surrounded-regions/
     - elif unmarked "O", change to "X"
 
 #### LC131 - Palindrome Partitioning
-https://leetcode.com/problems/palindrome-partitioning/
+
+<https://leetcode.com/problems/palindrome-partitioning/>
+
 - DP to make dp[i][j] represents whether s[i:j] is palindrome
 - DFS to enumerate palindrome
 
 #### LC134 - Gas Station
-https://leetcode.com/problems/gas-station/
+
+<https://leetcode.com/problems/gas-station/>
+
 - If i to j cannot make it, any k in [i,j], k to j will not make it too
 - So wo should then find from j+1, so finish in O(N)
 
 #### LC136 - Single Number
-https://leetcode.com/problems/single-number/
+
+<https://leetcode.com/problems/single-number/>
+
 - XOR
 
 #### LC138 - Copy List with Random Pointer
-https://leetcode.com/problems/copy-list-with-random-pointer/
+
+<https://leetcode.com/problems/copy-list-with-random-pointer/>
+
 - HashMap
 
 #### LC139 - Word Break
-https://leetcode.com/problems/word-break/
+
+<https://leetcode.com/problems/word-break/>
+
 - Store previous success index and loop on them
 
 #### LC140 - Word Break II
-https://leetcode.com/problems/word-break-ii/
+
+<https://leetcode.com/problems/word-break-ii/>
+
 - Idea from LC139 with DFS
 - Store current word in current length in an array
   - Finally use dfs to generate the answer
 
 #### LC141 - Linked List Cycle
-https://leetcode.com/problems/linked-list-cycle/
+
+<https://leetcode.com/problems/linked-list-cycle/>
+
 - Two pointer, one faster, if met, True
 
 #### LC146 - LRU Cache
-https://leetcode.com/problems/lru-cache/
+
+<https://leetcode.com/problems/lru-cache/>
+
 - Use double list with head and tail node
   - the node after the head node is mru
   - the node before the tail node is lru
-  - use two internal function insert and delete to maintain the double list 
+  - use two internal function insert and delete to maintain the double list
 
 #### LC147 - Insertion Sort List
-https://leetcode.com/problems/insertion-sort-list/
+
+<https://leetcode.com/problems/insertion-sort-list/>
+
 - Just insertion sort on a linked list
 
 #### LC148 - Sort List
-https://leetcode.com/problems/sort-list/
+
+<https://leetcode.com/problems/sort-list/>
+
 - Merge sort of a linked list
   - Recursively split and merge left and right part
 
 #### LC149 - Max Points on a Line
-https://leetcode.com/problems/max-points-on-a-line/
+
+<https://leetcode.com/problems/max-points-on-a-line/>
+
 - O(N^2) stupid method without optimization, just use a hash map to store (k-b, occurrence) pairs
 
 #### LC150 - Evaluate Reverse Polish Notation
-https://leetcode.com/problems/evaluate-reverse-polish-notation/
+
+<https://leetcode.com/problems/evaluate-reverse-polish-notation/>
+
 - Use a stack
 
 #### LC152 - Maximum Product Subarray
-https://leetcode.com/problems/maximum-product-subarray/
+
+<https://leetcode.com/problems/maximum-product-subarray/>
+
 - Find max from head to tail and then tail to head to get rid of the sign problems
 
 #### LC155 - Min Stack
-https://leetcode.com/problems/min-stack/
+
+<https://leetcode.com/problems/min-stack/>
+
 - Stack entry save both val and minval
 
 #### LC160 - Intersection of Two Linked Lists
-https://leetcode.com/problems/intersection-of-two-linked-lists/
+
+<https://leetcode.com/problems/intersection-of-two-linked-lists/>
+
 - HashSet
 
 #### LC162 - Find Peak Element
-https://leetcode.com/problems/find-peak-element/
+
+<https://leetcode.com/problems/find-peak-element/>
+
 - If num[i] > num[i+1], peak point must exist at x <= i
 - Else, peak point must exist at x >= i + 1
 - So we can do binary search
 
 #### LC163 - Missing Ranges
-https://leetcode.com/problems/missing-ranges/
+
+<https://leetcode.com/problems/missing-ranges/>
+
 - Nothing to say, a boring problem
 
 #### LC164 - Maximum Gap
-https://leetcode.com/problems/maximum-gap/
+
+<https://leetcode.com/problems/maximum-gap/>
+
 - Linear time sort algorithm
   - Radix Sort
 
 #### LC166 - Fraction to Recurring Decimal
-https://leetcode.com/problems/fraction-to-recurring-decimal/
+
+<https://leetcode.com/problems/fraction-to-recurring-decimal/>
+
 - Long division
 
 #### LC169 - Majority Element
-https://leetcode.com/problems/majority-element/
+
+<https://leetcode.com/problems/majority-element/>
+
 - Use Counter
-  - return Counter(nums).most_common(1)[0][0]
+  - return Counter(nums).most_common[1][0](0)
 
 #### LC171 - Excel Sheet Column Number
-https://leetcode.com/problems/excel-sheet-column-number/
+
+<https://leetcode.com/problems/excel-sheet-column-number/>
+
 - 26-base
 
 #### LC172 - Factorial Trailing Zeroes
-https://leetcode.com/problems/factorial-trailing-zeroes/
+
+<https://leetcode.com/problems/factorial-trailing-zeroes/>
+
 - Hardcode....
 
 #### LC179 - Largest Number
-https://leetcode.com/problems/largest-number/
+
+<https://leetcode.com/problems/largest-number/>
+
 - Sort
 - Use comparator and greedy algorihtm
   - extend two num string a and b to same length
@@ -355,15 +493,21 @@ https://leetcode.com/problems/largest-number/
 - Sort again, sorted(strings, key=cmp_to_key(comparator), reverse=True)
 
 #### LC215 - Kth Largest Element in an Array
-https://leetcode.com/problems/kth-largest-element-in-an-array/
+
+<https://leetcode.com/problems/kth-largest-element-in-an-array/>
+
 - Maintain a queue of size k
 
 #### LC217 - Contains Duplicate
-https://leetcode.com/problems/contains-duplicate/
+
+<https://leetcode.com/problems/contains-duplicate/>
+
 - Simple HashMap
 
 #### LC220 - Contains Duplicate III
-https://leetcode.com/problems/contains-duplicate-iii/\
+
+<https://leetcode.com/problems/contains-duplicate-iii/>\
+
 ```python:
 def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool:
         window = SortedList()
@@ -379,19 +523,26 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
             
         return False
 ```
+
 - Use SortedList as sliding window
 - Use interval of [num - t, num + t] to judge
 
 #### LC229 - Majority Element II
-https://leetcode.com/problems/majority-element-ii/
+
+<https://leetcode.com/problems/majority-element-ii/>
+
 - Simple HashMap
 
 #### LC242 - Valid Anagram
-https://leetcode.com/problems/valid-anagram/
+
+<https://leetcode.com/problems/valid-anagram/>
+
 - Use two Counter and subtract, if all zero True
 
 #### LC274 - H-Index
-https://leetcode.com/problems/h-index/
+
+<https://leetcode.com/problems/h-index/>
+
 - First remove all zeros
 - Sort and Loop:
   - if length - i <= citations[i]:
@@ -399,38 +550,53 @@ https://leetcode.com/problems/h-index/
 - return length - i
 
 #### LC295 - Find Median from Data Stream
-https://leetcode.com/problems/find-median-from-data-stream/
+
+<https://leetcode.com/problems/find-median-from-data-stream/>
+
 - Use two heaps: minHeap maxHeap
 - Maintain the two heap to make the top of the two heaps can make median
 
 #### LC324 - Wiggle Sort II
-https://leetcode.com/problems/wiggle-sort-ii/
+
+<https://leetcode.com/problems/wiggle-sort-ii/>
+
 - Sort
 - Two pass, insert with stride of 1 each time
 
 #### LC1689 - Partitioning Into Minimum Number Of Deci-Binary Numbers
-https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/
+
+<https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/>
+
 - Brain teaser
 
 #### LC2315 - Count Asterisks
-https://leetcode.com/problems/count-asterisks/
+
+<https://leetcode.com/problems/count-asterisks/>
+
 - One pass
 
 #### LC2316 - Count Unreachable Pairs of Nodes in an Undirected Graph
-https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/
+
+<https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/>
+
 - Turn edges in to dictionary
 - dfs to find each connections of each node
 - calculate unreachable num at last
 
 #### LC2317 - Maximum XOR After Operations
-https://leetcode.com/problems/maximum-xor-after-operations/
+
+<https://leetcode.com/problems/maximum-xor-after-operations/>
+
 - Emmmmm, just remember
 
 #### LC2318 - Number of Distinct Roll Sequences
-https://leetcode.com/problems/number-of-distinct-roll-sequences/
+
+<https://leetcode.com/problems/number-of-distinct-roll-sequences/>
+
 - We can get all possible combinations if given previous dice and previous-previous dice
 - So we can use dp with dfs
 - Use a 3D dp array to store the no of combionations given previous roll, previous-previous roll and current length
+
 ```python
 class Solution:
     dp = [[[0 for _ in range(7)] for _ in range(7)] for _ in range(10001)]
@@ -450,14 +616,20 @@ class Solution:
 ```
 
 #### LC2319 - Check if Matrix Is X-Matrix
-https://leetcode.com/problems/check-if-matrix-is-x-matrix/
+
+<https://leetcode.com/problems/check-if-matrix-is-x-matrix/>
+
 - Nothing to say
 
 #### LC2320 - Count Number of Ways to Place Houses
-https://leetcode.com/problems/count-number-of-ways-to-place-houses/
+
+<https://leetcode.com/problems/count-number-of-ways-to-place-houses/>
+
 - Use 2D dp
 
 #### LC2321 - Maximum Score Of Spliced Array
-https://leetcode.com/problems/maximum-score-of-spliced-array/
+
+<https://leetcode.com/problems/maximum-score-of-spliced-array/>
+
 - Kadane Algo: longest subarray sum
 - So the answer can be changed to: max(sum(A) + kadane(B-A), sum(B) + kadane(A-B))
