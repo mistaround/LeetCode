@@ -399,3 +399,40 @@ https://leetcode.com/problems/find-median-from-data-stream/
 https://leetcode.com/problems/wiggle-sort-ii/
 - Sort
 - Two pass, insert with stride of 1 each time
+
+#### LC2315 - Count Asterisks
+https://leetcode.com/problems/count-asterisks/
+- One pass
+
+#### LC2316 - Count Unreachable Pairs of Nodes in an Undirected Graph
+https://leetcode.com/problems/count-unreachable-pairs-of-nodes-in-an-undirected-graph/
+- Turn edges in to dictionary
+- dfs to find each connections of each node
+- calculate unreachable num at last
+
+#### LC2317 - Maximum XOR After Operations
+https://leetcode.com/problems/maximum-xor-after-operations/
+- Emmmmm, just remember
+
+#### LC2318 - Number of Distinct Roll Sequences
+https://leetcode.com/problems/number-of-distinct-roll-sequences/
+- We can get all possible combinations if given previous dice and previous-previous dice
+- So we can use dp with dfs
+- Use a 3D dp array to store the no of combionations given previous roll, previous-previous roll and current length
+```python
+class Solution:
+    dp = [[[0 for _ in range(7)] for _ in range(7)] for _ in range(10001)]
+    
+    def distinctSequences(self, n: int) -> int:
+        
+        def helper(n, p, pp):
+            if n == 0:
+                return 1
+            if self.dp[n][p][pp] == 0:
+                for d in range(1, 7):
+                    if d != p and d != pp and (p == 0 or math.gcd(d, p) == 1):
+                        self.dp[n][p][pp] = (self.dp[n][p][pp] + helper(n-1, d, p)) % ((10 ** 9) + 7)
+            return self.dp[n][p][pp]
+        
+        return helper(n, 0, 0)
+```
