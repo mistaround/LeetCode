@@ -492,6 +492,56 @@
   - if int a' = int b', if int(a + b) > int(b + a) return 1 else -1
 - Sort again, sorted(strings, key=cmp_to_key(comparator), reverse=True)
 
+#### LC189 - Rotate Array
+
+<https://leetcode.com/problems/rotate-array/>
+
+- System.arraycopy(src, srcIdx, tar, tarIdx, length)
+
+#### LC190 - Reverse Bits
+
+<https://leetcode.com/problems/reverse-bits/>
+
+- Bit manipulation
+- & to get last bit
+- | to change 31 - i th bit
+
+#### LC191 - Number of 1 Bits
+
+<https://leetcode.com/problems/number-of-1-bits/>
+
+- Bit manipulation
+
+#### LC198 - House Robber
+
+<https://leetcode.com/problems/house-robber/>
+
+- DP, use a variable to store the max dp value before ith
+
+#### LC200 - Number of Islands
+
+<https://leetcode.com/problems/number-of-islands/>
+
+- DFS to modify in place on visted node
+
+#### LC202 - Happy Number
+
+<https://leetcode.com/problems/happy-number/>
+
+- Nothing to say, easy in python
+
+#### LC204 - Count Primes
+
+<https://leetcode.com/problems/count-primes/>
+
+- Sieve of Eratosthenes, O(N) space complexity
+
+#### LC206 - Reverse Linked List
+
+<https://leetcode.com/problems/reverse-linked-list/>
+
+- Recursion
+
 #### LC215 - Kth Largest Element in an Array
 
 <https://leetcode.com/problems/kth-largest-element-in-an-array/>
