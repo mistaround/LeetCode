@@ -550,6 +550,12 @@
 - If node on current path is revisited, there should be a circle
 - Else if node is finished, just ingnore
 
+#### LC208 - Implement Trie (Prefix Tree)
+
+<https://leetcode.com/problems/implement-trie-prefix-tree/>
+
+- Use a dictonary tree
+
 #### LC215 - Kth Largest Element in an Array
 
 <https://leetcode.com/problems/kth-largest-element-in-an-array/>
