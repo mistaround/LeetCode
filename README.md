@@ -542,6 +542,14 @@
 
 - Recursion
 
+#### LC207 - Course Schedule
+
+<https://leetcode.com/problems/course-schedule/>
+
+- Use two array to store finished conditions and current path for DFS
+- If node on current path is revisited, there should be a circle
+- Else if node is finished, just ingnore
+
 #### LC215 - Kth Largest Element in an Array
 
 <https://leetcode.com/problems/kth-largest-element-in-an-array/>
