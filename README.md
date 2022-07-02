@@ -220,6 +220,29 @@
 
 - Nothing special
 
+#### LC95 - Unique Binary Search Trees II
+
+<https://leetcode.com/problems/unique-binary-search-trees-ii/>
+
+- Build large trees from small subtrees
+- Smallest subtree is a None
+- recursion
+
+#### LC96 - Unique Binary Search Trees
+
+<https://leetcode.com/problems/unique-binary-search-trees/>
+
+- G(n): the number of unique BST for a sequence of length n.
+- F(i,n): the number of unique BST, where the number i is served as the root of BST (1 \leq i \leq n1≤i≤n).
+- Dynamic Programming
+
+#### LC98 - Validate Binary Search Tree
+
+<https://leetcode.com/problems/validate-binary-search-tree/>
+
+- A valid BST node on the left should smaller than its parent, node on the right should larger than its parent
+- Use +- inf as dummy left and right value
+
 #### LC101 - Symmetric Tree
 
 <https://leetcode.com/problems/symmetric-tree/>
@@ -555,6 +578,12 @@
 <https://leetcode.com/problems/implement-trie-prefix-tree/>
 
 - Use a dictonary tree
+
+#### LC210 - Course Schedule II
+
+<https://leetcode.com/problems/course-schedule-ii/>
+
+- Similar to LC207, add to answer when all child return True
 
 #### LC215 - Kth Largest Element in an Array
 
