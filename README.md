@@ -243,6 +243,20 @@
 - A valid BST node on the left should smaller than its parent, node on the right should larger than its parent
 - Use +- inf as dummy left and right value
 
+#### LC99 - Recover Binary Search Tree
+
+<https://leetcode.com/problems/recover-binary-search-tree/>
+
+- Inorder traversal of BST is a increasing sorted list
+- So we can find the two wrong node in the list
+- At last, use the val to find the two node and swap
+
+#### LC100 - Same Tree
+
+<https://leetcode.com/problems/same-tree/>
+
+- isSameTree(p,q) = isSameTree(p.left, q.left) and isSameTree(p.right, q.right)
+
 #### LC101 - Symmetric Tree
 
 <https://leetcode.com/problems/symmetric-tree/>
@@ -726,3 +740,27 @@ class Solution:
 
 - Kadane Algo: longest subarray sum
 - So the answer can be changed to: max(sum(A) + kadane(B-A), sum(B) + kadane(A-B))
+
+#### LC2325 - Decode the Message
+
+<https://leetcode.com/problems/decode-the-message/>
+
+- Nothing
+
+#### LC2326 - Spiral Matrix IV
+
+<https://leetcode.com/problems/spiral-matrix-iv/>
+
+- Boring
+
+#### LC2327 - Number of People Aware of a Secret
+
+<https://leetcode.com/problems/number-of-people-aware-of-a-secret/>
+
+- DP, 2 dp arrays
+
+#### LC2328 - Number of Increasing Paths in a Grid
+
+<https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/>
+
+- DP with dfs
