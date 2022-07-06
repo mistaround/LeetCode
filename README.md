@@ -617,6 +617,14 @@
 
 - Simple HashMap
 
+#### LC218 - The Skyline Problem
+
+<https://leetcode.com/problems/the-skyline-problem/>
+
+- Use priority queue, heapq
+- Distinguish start and end point by different sign of height
+- Sort based on point and height to make start beyond end
+
 #### LC220 - Contains Duplicate III
 
 <https://leetcode.com/problems/contains-duplicate-iii/>\
@@ -640,11 +648,23 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 - Use SortedList as sliding window
 - Use interval of [num - t, num + t] to judge
 
+#### LC227 - Basic Calculator II
+
+<https://leetcode.com/problems/basic-calculator-ii/>
+
+- Use stack to store + - operations
+
 #### LC229 - Majority Element II
 
 <https://leetcode.com/problems/majority-element-ii/>
 
 - Simple HashMap
+
+#### LC230 - Kth Smallest Element in a BST
+
+<https://leetcode.com/problems/kth-smallest-element-in-a-bst/>
+
+- Inorder Traversal
 
 #### LC234 - Palindrome Linked List
 
