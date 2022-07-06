@@ -678,6 +678,20 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 
 - Use Two HashSet to store ancestors
 
+#### LC237 - Delete Node in a Linked List
+
+<https://leetcode.com/problems/delete-node-in-a-linked-list/>
+
+- Brain Teaser
+
+#### LC238 - Product of Array Except Self
+
+<https://leetcode.com/problems/product-of-array-except-self/>
+
+- [1 1 12 123]
+- [234 34 4 1].reverse
+- Multiply
+
 #### LC242 - Valid Anagram
 
 <https://leetcode.com/problems/valid-anagram/>
