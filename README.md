@@ -599,6 +599,12 @@
 
 - Similar to LC207, add to answer when all child return True
 
+#### LC212 - Word Search II
+
+<https://leetcode.com/problems/word-search-ii/>
+
+- Use Trie with DFS
+
 #### LC215 - Kth Largest Element in an Array
 
 <https://leetcode.com/problems/kth-largest-element-in-an-array/>
@@ -639,6 +645,18 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 <https://leetcode.com/problems/majority-element-ii/>
 
 - Simple HashMap
+
+#### LC234 - Palindrome Linked List
+
+<https://leetcode.com/problems/palindrome-linked-list/>
+
+- Turn to array
+
+#### LC236 - Lowest Common Ancestor of a Binary Tree
+
+<https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/>
+
+- Use Two HashSet to store ancestors
 
 #### LC242 - Valid Anagram
 
