@@ -692,6 +692,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 - [234 34 4 1].reverse
 - Multiply
 
+#### LC239 - Sliding Window Maximum
+
+<https://leetcode.com/problems/sliding-window-maximum/>
+
+- Use a hashmap as sliding window
+
 #### LC242 - Valid Anagram
 
 <https://leetcode.com/problems/valid-anagram/>
