@@ -747,6 +747,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 
 - Prefix Sum with hashmap
 
+#### LC675 - Cut Off Trees for Golf Event
+
+<https://leetcode.com/problems/cut-off-trees-for-golf-event/>
+
+- A Star!
+
 #### LC1022 - Sum of Root To Leaf Binary Numbers
 
 <https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/>
