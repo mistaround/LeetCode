@@ -722,6 +722,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 - Sort
 - Two pass, insert with stride of 1 each time
 
+#### LC1155 - Number of Dice Rolls With Target Sum
+
+<https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/>
+
+- DP on n and target
+
 #### LC1689 - Partitioning Into Minimum Number Of Deci-Binary Numbers
 
 <https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/>
