@@ -14,6 +14,13 @@
 - ans = Math.max(ans, i - left);
 - left = Math.max(left, window.get(cur) + 1);
 
+#### LC5 - Longest Palindromic Substring
+
+<https://leetcode.com/problems/longest-palindromic-substring/>
+
+- Spread from idx
+- Even condition can be treated as odd by adding a char into it
+
 #### LC10 - Regular Expression Matching
 
 <https://leetcode.com/problems/regular-expression-matching/>
@@ -23,6 +30,12 @@
 - if i=0 which means s is empty, only if p = a*b*c*... can match
 - when meet *, we should consider skip or once or multiple times:
   - dp[i][j-2] or dp[i][j-1] or (dp[i-1][j] and (s[i-1] == p[j-2] or p[j-2] == "."))
+
+#### LC11 - Container With Most Water
+
+<https://leetcode.com/problems/container-with-most-water/>
+
+- Greedy from outside
 
 #### LC15 - 3 Sum
 
@@ -692,6 +705,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 - [234 34 4 1].reverse
 - Multiply
 
+#### LC239 - Sliding Window Maximum
+
+<https://leetcode.com/problems/sliding-window-maximum/>
+
+- Use a hashmap as sliding window
+
 #### LC242 - Valid Anagram
 
 <https://leetcode.com/problems/valid-anagram/>
@@ -722,11 +741,47 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 - Sort
 - Two pass, insert with stride of 1 each time
 
+#### LC560 - Subarray Sum Equals K
+
+<https://leetcode.com/problems/subarray-sum-equals-k/>
+
+- Prefix Sum with hashmap
+
+#### LC1022 - Sum of Root To Leaf Binary Numbers
+
+<https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/>
+
+- DFS
+
+#### LC1122 - Relative Sort Array
+
+<https://leetcode.com/problems/relative-sort-array/>
+
+- HashMap
+
 #### LC1155 - Number of Dice Rolls With Target Sum
 
 <https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/>
 
 - DP on n and target
+
+#### LC1214 - Two Sum BSTs
+
+<https://leetcode.com/problems/two-sum-bsts/>
+
+- DFS
+
+#### LC1258 - Synonymous Sentences
+
+<https://leetcode.com/problems/synonymous-sentences/>
+
+- DFS with DFS
+
+#### LC1331 - Rank Transform of an Array
+
+<https://leetcode.com/problems/rank-transform-of-an-array/>
+
+- HashMap
 
 #### LC1689 - Partitioning Into Minimum Number Of Deci-Binary Numbers
 
