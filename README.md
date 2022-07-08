@@ -747,6 +747,30 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 
 - Prefix Sum with hashmap
 
+#### LC572 - Subtree of Another Tree
+
+<https://leetcode.com/problems/subtree-of-another-tree/>
+
+- BFS and DFS
+
+#### LC763 - Partition Labels
+
+<https://leetcode.com/problems/partition-labels/>
+
+- Notice that only if it can be binary divided it can be further divided
+
+#### LC819 - Most Common Word
+
+<https://leetcode.com/problems/most-common-word/>
+
+- Hashmap
+
+#### LC836 - Rectangle Overlap
+
+<https://leetcode.com/problems/rectangle-overlap/>
+
+- (rec2[2] - rec1[0]) *(rec2[0] - rec1[2]) < 0 and (rec2[3] - rec1[1])* (rec2[1] - rec1[3]) < 0
+
 #### LC1022 - Sum of Root To Leaf Binary Numbers
 
 <https://leetcode.com/problems/sum-of-root-to-leaf-binary-numbers/>
@@ -764,6 +788,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 <https://leetcode.com/problems/number-of-dice-rolls-with-target-sum/>
 
 - DP on n and target
+
+#### LC1176 - Diet Plan Performance
+
+<https://leetcode.com/problems/diet-plan-performance/>
+
+- Easy sliding window
 
 #### LC1214 - Two Sum BSTs
 
