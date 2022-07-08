@@ -753,6 +753,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 
 - BFS and DFS
 
+#### LC675 - Cut Off Trees for Golf Event
+
+<https://leetcode.com/problems/cut-off-trees-for-golf-event/>
+
+- A Star!
+
 #### LC763 - Partition Labels
 
 <https://leetcode.com/problems/partition-labels/>
