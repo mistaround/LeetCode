@@ -156,6 +156,13 @@
 - Use a cache to update current merged interval
   - cache = [cache[0], max(cache[1], intervals[i][1])]
 
+#### LC59 - Spiral Matrix II
+
+<https://leetcode.com/problems/spiral-matrix-ii/>
+
+- I hate this silly problem
+- Loop on layer
+
 #### LC62 - Unique Paths
 
 <https://leetcode.com/problems/unique-paths/>
@@ -741,6 +748,15 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 - Sort
 - Two pass, insert with stride of 1 each time
 
+#### LC540 - Single Element in a Sorted Array
+
+<https://leetcode.com/problems/single-element-in-a-sorted-array/>
+
+- 1,1,2,2,3,4,4,8,8
+- 0,1,2,3,4,5,6,7,8
+- Notice singular num will change the index and num relations on both side
+- So we can binary search based on this
+
 #### LC560 - Subarray Sum Equals K
 
 <https://leetcode.com/problems/subarray-sum-equals-k/>
@@ -776,6 +792,18 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 <https://leetcode.com/problems/rectangle-overlap/>
 
 - (rec2[2] - rec1[0]) *(rec2[0] - rec1[2]) < 0 and (rec2[3] - rec1[1])* (rec2[1] - rec1[3]) < 0
+
+#### LC895 - Maximum Frequency Stack
+
+<https://leetcode.com/problems/maximum-frequency-stack/>
+
+- Heap sort by (frequency, index)
+
+#### LC994 - Rotting Oranges
+
+<https://leetcode.com/problems/rotting-oranges/>
+
+- BFS
 
 #### LC1022 - Sum of Root To Leaf Binary Numbers
 
@@ -913,3 +941,21 @@ class Solution:
 <https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/>
 
 - DP with dfs
+
+#### LC2335 - Minimum Amount of Time to Fill Cups
+
+<https://leetcode.com/problems/minimum-amount-of-time-to-fill-cups/>
+
+- Brain Teaser
+
+#### LC2336 - Smallest Number in Infinite Set
+
+<https://leetcode.com/problems/smallest-number-in-infinite-set/>
+
+- Heap
+
+#### LC2337 - Move Pieces to Obtain a String
+
+<https://leetcode.com/problems/move-pieces-to-obtain-a-string/>
+
+- One Pass compare left and right count until current char
