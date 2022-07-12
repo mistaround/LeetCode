@@ -92,11 +92,23 @@
 
 - Brute-force
 
+#### LC37 - Sudoku Solver
+
+<https://leetcode.com/problems/sudoku-solver/>
+
+- BackTracing
+
 #### LC38 - Count and Say
 
 <https://leetcode.com/problems/count-and-say/>
 
 - Recursive
+
+#### LC39 - Combination Sum
+
+<https://leetcode.com/problems/combination-sum/>
+
+- Enumerate
 
 #### LC41 - First Missing Positive
 
@@ -774,6 +786,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 <https://leetcode.com/problems/cut-off-trees-for-golf-event/>
 
 - A Star!
+
+#### LC669 - Trim a Binary Search Tree
+
+<https://leetcode.com/problems/trim-a-binary-search-tree/>
+
+- DFS
 
 #### LC763 - Partition Labels
 
