@@ -125,19 +125,17 @@
 
 - Recursive
 
-<<<<<<< HEAD
-#### LC40 - Combination Sum II
-
-<https://leetcode.com/problems/combination-sum-ii/>
-
-- BackTrack
-=======
 #### LC39 - Combination Sum
 
 <https://leetcode.com/problems/combination-sum/>
 
 - Enumerate
->>>>>>> 8d65bc70691eda2cc9a2e0c02dfda621b271cb93
+
+#### LC40 - Combination Sum II
+
+<https://leetcode.com/problems/combination-sum-ii/>
+
+- BackTrack
 
 #### LC41 - First Missing Positive
 
