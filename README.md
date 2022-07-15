@@ -65,6 +65,12 @@
 
 - Same as 3 Sum
 
+#### LC25 - Reverse Nodes in k-Group
+
+<https://leetcode.com/problems/reverse-nodes-in-k-group/>
+
+- Iterations
+
 #### LC30 - Substring with Concatenation of All Words
 
 <https://leetcode.com/problems/substring-with-concatenation-of-all-words/>
@@ -73,6 +79,21 @@
 - Sliding window, loop each time across a wordLength
   - Need to judge whether the word in wordsCount and then whether there are excessed word...
 - In a word, it's very complex and I think I can't handle it if it appears in an interview
+
+#### LC31 - Next Permutation
+
+<https://leetcode.com/problems/next-permutation/>
+
+- Find first non-increasing number from back
+- Then find the smallest number larger than this number towards end
+- swap them and reverse the nums after the number
+
+#### LC32 - Longest Valid Parentheses
+
+<https://leetcode.com/problems/longest-valid-parentheses/>
+
+- Use a stack and an boolean array use it's index to store matched index
+- Find longest consecutive True
 
 #### LC33 - Search in Rotated Sorted Array
 
@@ -98,6 +119,12 @@
 
 - Recursive
 
+#### LC40 - Combination Sum II
+
+<https://leetcode.com/problems/combination-sum-ii/>
+
+- BackTrack
+
 #### LC41 - First Missing Positive
 
 <https://leetcode.com/problems/first-missing-positive/>
@@ -111,6 +138,12 @@
 
 - Dynamic Programming
 - Note that rain water is determined by min(maxLeft,maxRight)
+
+#### LC43 - Multiply Strings
+
+<https://leetcode.com/problems/multiply-strings/>
+
+- Easy
 
 #### LC44 - Wildcard Matching
 
