@@ -132,6 +132,12 @@
 - Using dp[i][j] to represent whether s[:i] matches p[:j]
 - init if s is empty, only p = ***... will match
 
+#### LC45 - Jump Game II
+
+<https://leetcode.com/problems/jump-game-ii/>
+
+- 2D dp, slow
+
 #### LC49 - Group Anagrams
 
 <https://leetcode.com/problems/group-anagrams/>
@@ -752,6 +758,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 
 - Use two heaps: minHeap maxHeap
 - Maintain the two heap to make the top of the two heaps can make median
+
+#### LC310 - Minimum Height Trees
+
+<https://leetcode.com/problems/minimum-height-trees/>
+
+- Topological Sort
 
 #### LC324 - Wiggle Sort II
 
