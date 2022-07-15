@@ -113,17 +113,31 @@
 
 - Brute-force
 
+#### LC37 - Sudoku Solver
+
+<https://leetcode.com/problems/sudoku-solver/>
+
+- BackTracing
+
 #### LC38 - Count and Say
 
 <https://leetcode.com/problems/count-and-say/>
 
 - Recursive
 
+<<<<<<< HEAD
 #### LC40 - Combination Sum II
 
 <https://leetcode.com/problems/combination-sum-ii/>
 
 - BackTrack
+=======
+#### LC39 - Combination Sum
+
+<https://leetcode.com/problems/combination-sum/>
+
+- Enumerate
+>>>>>>> 8d65bc70691eda2cc9a2e0c02dfda621b271cb93
 
 #### LC41 - First Missing Positive
 
@@ -152,6 +166,12 @@
 - Dynamic Programming
 - Using dp[i][j] to represent whether s[:i] matches p[:j]
 - init if s is empty, only p = ***... will match
+
+#### LC45 - Jump Game II
+
+<https://leetcode.com/problems/jump-game-ii/>
+
+- 2D dp, slow
 
 #### LC49 - Group Anagrams
 
@@ -774,6 +794,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 - Use two heaps: minHeap maxHeap
 - Maintain the two heap to make the top of the two heaps can make median
 
+#### LC310 - Minimum Height Trees
+
+<https://leetcode.com/problems/minimum-height-trees/>
+
+- Topological Sort
+
 #### LC324 - Wiggle Sort II
 
 <https://leetcode.com/problems/wiggle-sort-ii/>
@@ -807,6 +833,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 <https://leetcode.com/problems/cut-off-trees-for-golf-event/>
 
 - A Star!
+
+#### LC669 - Trim a Binary Search Tree
+
+<https://leetcode.com/problems/trim-a-binary-search-tree/>
+
+- DFS
 
 #### LC763 - Partition Labels
 
