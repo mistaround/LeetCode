@@ -171,6 +171,12 @@
 
 - 2D dp, slow
 
+#### LC47 - Permutations II
+
+<https://leetcode.com/problems/permutations-ii/>
+
+- Use counter key to avoid duplicates
+
 #### LC49 - Group Anagrams
 
 <https://leetcode.com/problems/group-anagrams/>
@@ -226,6 +232,12 @@
 
 - Binary Search
 - Use division to speed up
+
+#### LC72 - Edit Distance
+
+<https://leetcode.com/problems/edit-distance/>
+
+- dp[i][j] only depends on dp[i-1][j-1] and dp[i][j-1] and dp[i-1][j]
 
 #### LC73 - Set Matrix Zeroes
 
