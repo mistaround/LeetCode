@@ -191,6 +191,12 @@
 - pow(x,n) = pow(x,n/2) * pow(x, n/2) ...
 - Recursively
 
+#### LC51 - N-Queens
+
+<https://leetcode.com/problems/n-queens/>
+
+- anti-diagonal and diagonal can be represent as row + col and row + col
+
 #### LC54 - Spiral Matrix
 
 <https://leetcode.com/problems/spiral-matrix/>
