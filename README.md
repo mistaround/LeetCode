@@ -831,6 +831,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 - Use two heaps: minHeap maxHeap
 - Maintain the two heap to make the top of the two heaps can make median
 
+#### LC305 - Number of Islands II
+
+<https://leetcode.com/problems/number-of-islands-ii/>
+
+- Union Find
+
 #### LC310 - Minimum Height Trees
 
 <https://leetcode.com/problems/minimum-height-trees/>
