@@ -197,6 +197,12 @@
 
 - anti-diagonal and diagonal can be represent as row + col and row + col
 
+#### LC52 - N-Queens II
+
+<https://leetcode.com/problems/n-queens-ii/>
+
+- Same as LC51
+
 #### LC54 - Spiral Matrix
 
 <https://leetcode.com/problems/spiral-matrix/>
@@ -218,6 +224,13 @@
   - sorted(intervals, key=lambda intervals: intervals[0])
 - Use a cache to update current merged interval
   - cache = [cache[0], max(cache[1], intervals[i][1])]
+
+#### LC57 - Insert Interval
+
+<https://leetcode.com/problems/insert-interval/>
+
+- Category discussion
+- Greedy, consider the last element in output
 
 #### LC59 - Spiral Matrix II
 
@@ -452,6 +465,7 @@
 <https://leetcode.com/problems/longest-consecutive-sequence/>
 
 - Use a hashset to store, every first time the prev num is not contained, find the longest consecutive sequence from here and compare with the stored longest.
+- Or, Union Find
 
 #### LC130 - Surrounded Regions
 
@@ -803,6 +817,13 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
         break
 - return length - i
 
+#### LC280 - Wiggle Sort
+
+<https://leetcode.com/problems/wiggle-sort/>
+
+- Category discussion on odd and even index
+- Compare with previous one and swap
+
 #### LC295 - Find Median from Data Stream
 
 <https://leetcode.com/problems/find-median-from-data-stream/>
@@ -927,6 +948,12 @@ def containsNearbyAlmostDuplicate(self, nums: List[int], k: int, t: int) -> bool
 <https://leetcode.com/problems/rank-transform-of-an-array/>
 
 - HashMap
+
+#### LC1579 - Remove Max Number of Edges to Keep Graph Fully Traversable
+
+<https://leetcode.com/problems/remove-max-number-of-edges-to-keep-graph-fully-traversable/>
+
+- Judge whether union count be n-1
 
 #### LC1689 - Partitioning Into Minimum Number Of Deci-Binary Numbers
 
